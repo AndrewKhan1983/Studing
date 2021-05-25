@@ -8,7 +8,7 @@ public class Treug {
     }
 
     public void printPerimetrTreug(int a, int b, int c) {
-        System.out.println(a+b+c);
+        System.out.println("периметр "+ name + " равен " +  (a+b+c)+ ",цвет: " + colours);
     }
     public Treug (String colours, String name){
         this.colours = colours;
