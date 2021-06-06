@@ -25,6 +25,9 @@ public class Main {
         matrix2.setValueAt(2,1,7);
         matrix2.setValueAt(2,2,3);
 
-       IMatrix result = matrix2.add(matrix);
+       //IMatrix result = matrix2.add(matrix);
+       //IMatrix result = matrix2.sub(matrix);
+       IMatrix result = matrix2.mul(matrix);
+        System.out.println(result);
     }
 }
