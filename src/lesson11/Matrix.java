@@ -49,6 +49,14 @@ public class Matrix implements IMatrix {
 
     @Override
     public IMatrix add(IMatrix otherMatrix) throws IllegalArgumentException, NullPointerException {
+        if(this.getRows() != otherMatrix.getRows()){
+            System.out.println("Неравное количество строк");
+
+        }
+        if (this.getColumns() != otherMatrix.getColumns()){
+            System.out.println("неравное количество колонок");
+
+        }
         Matrix result = new Matrix(otherMatrix.getRows(), otherMatrix.getColumns());
         for (int i = 0; i < result.getRows(); i++) {
             for (int j = 0; j < result.getColumns(); j++) {
