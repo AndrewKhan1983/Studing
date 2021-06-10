@@ -1,8 +1,9 @@
 package lesson13_1;
 
+import java.util.Comparator;
 import java.util.Objects;
 
-public class Coin {
+public class Coin implements Comparable<Coin> {
     private double diametr;
     private double ves;
     private String metall;
@@ -71,5 +72,28 @@ public class Coin {
     @Override
     public int hashCode() {
         return Objects.hash(getDiametr(), getVes(), getMetall(), getNominal());
+    }
+
+    @Override
+    public int compareTo(Coin o) {
+        if (this.getNominal() != o.getNominal()){
+            return this.getNominal() - o.getNominal();
+
+        }
+
+        if (this.getDiametr() != o.getDiametr()){
+            return Double.compare(this.getDiametr(), o.getDiametr());
+        }
+
+        if (this.getVes() != o.getVes()){
+            return Double.compare(this.getVes(), o.getVes());
+
+        }
+
+        if (this.getMetall() != o.getMetall()){
+            return this.getMetall().compareTo(o.getMetall());
+
+        }
+        return 0;
     }
 }
