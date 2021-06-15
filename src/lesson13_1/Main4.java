@@ -36,7 +36,7 @@ public class Main4 {
         //Collection<Integer> unionWithoutDuplicate = utils.unionWithoutDuplicate(a,b);
         //System.out.println(unionWithoutDuplicate);
 
-        Collection<Integer> intersectionWithoutDuplicate = utils.intersectionWithoutDuplicate(a,b);
+        Collection<Integer> intersectionWithoutDuplicate = utils.intersectionWithoutDuplicate(a, b);
         System.out.println(intersectionWithoutDuplicate);
     }
 }

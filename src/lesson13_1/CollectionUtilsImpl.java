@@ -43,12 +43,12 @@ public class CollectionUtilsImpl implements CollectionUtils {
 
     @Override
     public Set<Integer> unionWithoutDuplicate(Collection<Integer> a, Collection<Integer> b) throws NullPointerException {
-        Set<Integer> num = new LinkedHashSet<>(a);
-        num.addAll(b);
-        List<Integer> finnum = new LinkedList<>(num);
+        Set<Integer> nu = new LinkedHashSet<>(a);
+        nu.addAll(b);
+        List<Integer> finnum = new LinkedList<>(nu);
 
 
-        return num;
+        return nu;
     }
 
     @Override
@@ -91,3 +91,6 @@ public class CollectionUtilsImpl implements CollectionUtils {
         return difference;
     }
 }
+
+
+// изменения
