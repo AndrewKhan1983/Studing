@@ -12,5 +12,9 @@ public class Main {
         holodilnik.printAllProducts();
         holodilnik.getProduct("яблоко", 30);
         holodilnik.printAllProducts();
+
+        // вывести продукт который скоро закончится
+        // вывести вес всех продуктов
+        // ** вывести отсортированный список от А до Я
     }
 }
