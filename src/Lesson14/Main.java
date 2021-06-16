@@ -9,12 +9,18 @@ public class Main {
         holodilnik.addProduct("яблоко", 7);
 
 
-        holodilnik.printAllProducts();
-        holodilnik.getProduct("яблоко", 30);
+       // holodilnik.printAllProducts();
+       // holodilnik.getProduct("яблоко", 30);
+       // holodilnik.printAllProducts();
+       // holodilnik.minprod();
+       // holodilnik.printAllProducts();
+        //holodilnik.summaves();
+        //holodilnik.printAllProducts();
+        holodilnik.sortByKey();
         holodilnik.printAllProducts();
 
-        // вывести продукт который скоро закончится
-        // вывести вес всех продуктов
+        // вывести продукт который скоро закончится +-
+        // вывести вес всех продуктов -
         // ** вывести отсортированный список от А до Я
     }
 }

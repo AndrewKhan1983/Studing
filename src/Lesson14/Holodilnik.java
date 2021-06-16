@@ -1,6 +1,6 @@
 package Lesson14;
 
-import java.util.HashMap;
+import java.util.*;
 
 public class Holodilnik {
     private HashMap<String, Integer> products = new HashMap<>();
@@ -34,4 +34,36 @@ public class Holodilnik {
         }
         products.put(product, currentValue - value);
     }
+
+    public void minprod() {
+        for (int ves : products.values()) {
+            if (ves <= 2) {
+                System.out.println(products.keySet() + "Товар заканчивается");
+
+            }
+
+        }
+
+
+    }
+
+    public void summaves() {
+        for (int ves : products.values()) {
+            System.out.println(products.values().size());
+
+        }
+    }
+
+    public void sortByKey() {
+        //System.out.println("products: " + products);
+        //HashMap<String,Integer> sorted = new TreeMap<>(products);
+        //System.out.println("sorted" + sorted);
+        //LinkedHashMap<String,Integer> sort = new LinkedHashMap(products);
+        //sort.keySet();
+        List mapKeys = new ArrayList(products.keySet());
+        Collections.sort(mapKeys);
+
+    }
 }
+
+
