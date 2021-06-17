@@ -71,7 +71,6 @@ public class Tovar implements Comparable<Tovar> {
         if (this.getName() != o.getName()) {
             return this.getName().compareTo(o.getName());
 
-
         }
         if (this.getRate() != o.getRate()) {
             return Double.compare(o.getRate(), o.getRate());
