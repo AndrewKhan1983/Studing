@@ -74,7 +74,7 @@ public class StrinUtilsImpl implements StringUtils {
 
 
 
-        return div;
+        return num1 / num2;
     }
 
     // Pattern
