@@ -1,5 +1,7 @@
 package lesson17;
 
+import java.io.IOException;
+
 /**
  * Интерфейс копирования файлов
  * 
@@ -16,5 +18,5 @@ public interface FileCopyUtils {
 	 * @throws FileAlreadyExistsException если целевой файл уже существует
 	 * @throws FileCopyFailedException если произошла какая-нибудь ошибка при копировании файлов, в cause следует указать источник ошибки
 	 */
-	void copyFile(String source, String destination) throws FileCopyFailedException, FileAlreadyExistsException;
+	void copyFile(String source, String destination) throws FileCopyFailedException, FileAlreadyExistsException, IOException;
 }
