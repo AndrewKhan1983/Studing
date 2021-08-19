@@ -1,6 +1,7 @@
 package lesson16_1;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class Sklad {
     private HashMap <Tovar,Integer> tovars = new HashMap<>();
@@ -28,5 +29,31 @@ public class Sklad {
         }
 
         tovars.put(tovar,tovars.get(tovar) - value);
+    }
+
+    public void printAllTovars(){
+        for (Tovar t:tovars.keySet()) {
+            System.out.println(t.getName() + " - " + tovars.get(t));
+        }
+    }
+    public void printAllTovars2(){
+        for (Map.Entry<Tovar, Integer> para:tovars.entrySet()) {
+            System.out.println(para.getKey().getName() + " - " + para.getValue());
+        }
+    }
+
+    public Tovar getMinCountTovar(){
+        Tovar minTovar = null;
+        for (Tovar t:tovars.keySet()) {
+            if (minTovar==null){
+                minTovar = t;
+            }else {
+                if (tovars.get(t) < tovars.get(minTovar)){
+                    minTovar = t;
+                }
+            }
+
+        }
+        return minTovar;
     }
 }

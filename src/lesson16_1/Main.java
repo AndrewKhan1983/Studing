@@ -19,5 +19,11 @@ public class Main {
 
         sklad.deleteTovar(tovar1,5);
         System.out.println();
+        sklad.printAllTovars2();
+        System.out.println(sklad.getMinCountTovar());
+
+        // вернуть самый дорогой товар
+        // узнать ценность склада
+
     }
 }
